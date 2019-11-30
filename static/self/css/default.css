@@ -1,5 +1,8 @@
+body {
+    background-color: #f0f0f0;
+    font-family: monospace;
+}
 /* index */
-
 .about {
     margin-top: 40px;
     width: 100%;
@@ -12,6 +15,12 @@
     text-align: center;
     padding: 30px 10px;
     position: relative;
+}
+
+.about_left_icon {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
 }
 
 .about_portrait {
@@ -83,9 +92,53 @@
     color: #697A89;
 }
 
+/* Single */
+
+.single-content {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    position:relative;
+}
+
+.single-title {
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    line-height: 1.125;
+}
+
+/* Lists */
+
+.list-card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list-title {
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    color: #697A89;
+    vertical-align: middle;
+}
+
+.tags-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Pager */
+.pager {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     text-align: center;
+    margin-top: 20px;
     border-bottom: var(--border-width) solid var(--accent);
     font-family: 'TT Commons',Arial,Helvetica,sans-serif;
     font-size: 1.0625rem;

@@ -1,0 +1,44 @@
+<html>
+    {{partial "head" .}}
+<body>
+{{partial "header" .}}
+{{partial "nav" .}}
+
+<main id="main">
+
+<div class="layui-container">
+
+
+    <div class="layui-card tags-card">
+        <div class="layui-card-header"><h1>Tags</h1></div>
+        <div class="layui-card-body">
+            {{ range .Pages }}
+                <a href="{{.Permalink}}">
+                    <span class="layui-badge layui-bg-blue" >{{ .Title }}</span>
+                </a>
+            {{end}}
+        </div>
+    </div>
+
+    {{ range .Pages }}
+    {{ if .Summary }}
+    <div class="layui-card list-card">
+        <div class="layui-card-header">
+            <a href="{{.Permalink}}">
+                <h2 class="">{{.Title}} - {{.Date.Format "2006-01-02"}}</h2>
+            </a>
+        </div>
+        <div class="layui-card-body">
+            {{ .Summary }} <a href="{{.Permalink}}"><span style="color:#01AAED">More</span></a>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+</div>
+
+</main>
+
+{{ partial "footer" . }}
+</body>
+</html>

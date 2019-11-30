@@ -11,6 +11,18 @@
             <img class="about_portrait" src="{{ .Site.Params.portrait | default "self/img/avater.jpg" }}"/>
             <h1> {{ .Site.Params.author | default "Authors"}} </h1>
             <h2> {{ .Site.Params.description | default "Intro"}} </h2>
+            
+            <!-- Icons -->
+            {{ if .Site.Menus.icon }}
+            <div class="layui-row about_left_icon">
+                {{ range sort .Site.Menus.icon }}
+                <div class="layui-col-md3">
+                <a href="{{ .URL }}"><i class="fa fa-{{ .Name }}" style="font-size:32px;"></i></a>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+
         </div>
         <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 about_right">
             <h1>Biography</h1>

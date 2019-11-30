@@ -4,16 +4,27 @@
 {{partial "header" .}}
 {{partial "nav" .}}
 
-<main>
+<div class="layui-container">
 
-    <div>
-        <h2>{{ .Title }}</h2>
-        <h5>{{ .Description }}</h5>
+    <blockquote class="layui-elem-quote markdown-body single-title" >
+        <h1>{{ .Title }}</h1>
+        <h3> {{ .Date.Format "2006 Jan 2, Mon." }} {{ .WordCount }} Words. {{ .Description }}</h3>
+        {{ range .Params.tags }}
+            <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">
+                <span class="layui-badge" >{{ . }}</span>
+            </a>
+        {{ end }}
+    </blockquote>
+    
+    <div class="layui-row">
+        <div class="layui-card">
+            <div class="layui-card-body markdown-body single-content">
+            
+                {{ .Content }}
+            </div>
+        </div>
     </div>
-
-    <div align="start" class="content">{{ .Content }}</div>
-
-</main>
+</div>
 
 {{ partial "footer" . }}
 </body>
