@@ -3,9 +3,9 @@
 
 name = "Erblog"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE"
+description = "A Simple Theme for Ertuil's Blog"
+homepage = "https://github.com/ertuil/erblog"
 tags = []
 features = []
 min_version = "0.41"
