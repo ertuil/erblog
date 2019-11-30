@@ -1,0 +1,14 @@
+
+<ul class="layui-nav layui-bg-cyan" lay-filter="">
+    {{ if .Site.Menus.main }}
+        {{ range sort .Site.Menus.main }}
+            <li class="layui-nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    {{ end }}
+</ul>
+ 
+<script>
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>

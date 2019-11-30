@@ -1,23 +1,26 @@
-<ul class="layui-nav" lay-filter="">
-  <li class="layui-nav-item"><a href="">最新活动</a></li>
-  <li class="layui-nav-item layui-this"><a href="">产品</a></li>
-  <li class="layui-nav-item"><a href="">大数据</a></li>
-  <li class="layui-nav-item">
-    <a href="javascript:;">解决方案</a>
-    <dl class="layui-nav-child"> <!-- 二级菜单 -->
-      <dd><a href="">移动模块</a></dd>
-      <dd><a href="">后台模版</a></dd>
-      <dd><a href="">电商平台</a></dd>
-    </dl>
-  </li>
-  <li class="layui-nav-item"><a href="">社区</a></li>
-</ul>
- 
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-  //…
-});
-</script>
+<html>
+    {{partial "head" .}}
+<body>
+{{partial "header" .}}
+{{partial "nav" .}}
+
+<main>
+<div class="layui-container">
+    <div class="layui-row about">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md4 about_left">
+            <img class="about_portrait" src="{{ .Site.Params.portrait | default "self/img/avater.jpg" }}"/>
+            <h1> {{ .Site.Params.author | default "Authors"}} </h1>
+            <h2> {{ .Site.Params.description | default "Intro"}} </h2>
+        </div>
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 about_right">
+            <h1>Biography</h1>
+            <h2>{{ markdownify .Site.Params.Bio }}</h2>
+        </div>
+    </div>
+</div>
+</main>
+
+
+{{ partial "footer" . }}
+</body>
+</html>
