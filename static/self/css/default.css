@@ -126,6 +126,13 @@ body {
     line-height: 1.125;
 }
 
+.single-related {
+    font-size: 20;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 /* Lists */
 
 .list-card {

@@ -26,8 +26,7 @@
         </div>
         <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 about_right">
             <h1>Biography</h1>
-            <h2>  </h2>
-            <h2>{{ markdownify .Site.Params.Bio }}</h2>
+            <h2>{{ safeHTML .Site.Params.Bio }}</h2>
         </div>
     </div>
 </div>
