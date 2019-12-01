@@ -1,21 +1,19 @@
-# Minimal
+# Erblog
 
-Personal blog theme powered by [Hugo](https://gohugo.io).
-A live demo is available [here](https://themes.gohugo.io/theme/minimal/).
+A personal blog theme powered by [Hugo](https://gohugo.io).
+Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com) and [undraw](https://undraw.co).
 
 ## Installation
 
-You can install the theme either as a clone or submodule.
-
-I recommend the latter. From the root of your Hugo site, type the following:
+You can install the theme by git clone.
 
 ```
-$ git submodule add https://github.com/calintat/minimal.git themes/minimal
+$ git submodule add https://github.com/ertuil/erblog themes/erblog
 $ git submodule init
 $ git submodule update
 ```
 
-Now you can get updates to Minimal in the future by updating the submodule:
+Now you can get updates to Erblog in the future by updating the submodule:
 
 ```
 $ git submodule update --remote themes/minimal
@@ -23,71 +21,85 @@ $ git submodule update --remote themes/minimal
 
 ## Configuration
 
-After installation, take a look at the `exampleSite` folder inside `themes/minimal`.
+There are some basic configuration options you may want to use:
 
-To get started, copy the `config.toml` file inside `exampleSite` to the root of your Hugo site:
+| Name | Description | Default |
+| ---- | ---- | ---- |
+| title | Name of your website | None |
+| googleAnalytics | Google Analytics ID| None |
+| Params.portrait | The protrait file | erblog/static/self/img/avater.jpg |
+| Params.author | Your Name | None |
+| Params.description | A simple description | None |
+| Params.bio | Your biological description | None |
+| Params.favicon | The favicon file | "/favicon.ico" |
+
+Alse you can add your own custom menus in `config.toml` like this:
 
 ```
-$ cp themes/minimal/exampleSite/config.toml .
+[[menu.main]]
+    url = "/home/"
+    name = "Files"
+    weight = 6
+
+[[menu.main]]
+    url = "/dl/"
+    name = "Download"
+    weight = 7
 ```
 
-Now edit this file and add your own information. Note that some fields can be omitted.
+None you add add your contacts like this:
 
-I recommend you use the theme's archetypes so now delete your site's `archetypes/default.md`.
+```
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
 
-## Features
+[[menu.icon]]
+    url = "mailto:me@xxx.com"
+    name = "envelope-o"
+    weight = 1
 
-You can tweak the look of the theme to suit your needs in a number of ways:
+[[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 1
 
-- The accent colour can be changed by using the `accent` field in `config.toml`.
+[[menu.icon]]
+    url = "https://twitter.com/username"
+    name = "twitter"
+    weight = 1
 
-- You can also change the background colour by using `backgroundColor`.
-
-- Add colored 5px borders at the top and bottom of pages by setting `showBorder` to `true`.
-
-For best results, I recommend you use a dark accent colour with a light background, for example:
-
-```toml
-[params]
-    accent = "red"
-    showBorder = true
-    backgroundColor = "white"
+[[menu.icon]]
+    url = "https://www.instagram.com/username/"
+    name = "instagram"
+    weight = 1
 ```
 
-### Fonts
+## Content Management
 
-The theme uses [Google Fonts](https://fonts.google.com) to load its font. To change the font:
+There are two basic sections, 'post' and 'gallery'. You may create a new post using the following command:
 
-```toml
-[params]
-    font = "Raleway" # should match the name on Google Fonts!
+```
+hugo new post/post_name.md
 ```
 
-### Syntax highlighting
+Gallery is a simple collection for your photos.
 
-The theme supports syntax highlighting thanks to [highlight.js](https://highlightjs.org).
-
-It's disabled by default, so you have to enable it by setting `highlight` to `true` in your config.
-
-You can change the style used for the highlighting by using the `highlightStyle` field.
-
-Only the "common" languages will be loaded by default. To load more, use `highlightLanguages`.
-
-A list of all the available styles and languages can be found [here](https://highlightjs.org/static/demo/).
-
-Please note the style and languages should be written in hyphen-separated lowercase, for example:
-
-```toml
-[params]
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+```
+hugo new gallery/gallery_name.md
 ```
 
+You can upload your files to `/static` directory and write these contents in `gallery_name.md`:
 
-## Erblog
+```
+---
+title: "A gallery"
+date: 2019-12-01T13:21:53+08:00
+draft: false
+---
 
-* Params.portrait
-* Params.author
-* Params.description
-* Params.bio
+![0](/avater.jpg)
+![1](/people/1.png)
+![2](/people/2.png)
+![3](/people/3.png)
+```
