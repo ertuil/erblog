@@ -75,6 +75,8 @@ None you add add your contacts like this:
     weight = 1
 ```
 
+For more details, see exampleSite.
+
 ## Content Management
 
 There are two basic sections, 'post' and 'gallery'. You may create a new post using the following command:
