@@ -4,10 +4,10 @@
 name = "Erblog"
 license = "MIT"
 licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE"
-description = "A Simple Theme for Ertuil's Blog"
+description = "A Simple Theme for blog and gallery"
 homepage = "https://github.com/ertuil/erblog"
-tags = ["blog","gallery",]
-features = ["tags"]
+tags = ["blog","gallery","fun"]
+features = ["tags","simple","personality"]
 min_version = "0.41"
 
 [author]
