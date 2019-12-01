@@ -12,9 +12,11 @@
         <div class="layui-card-header"><h1>Tags</h1></div>
         <div class="layui-card-body">
             {{ range .Pages }}
+                {{ if not .Summary}}
                 <a href="{{.Permalink}}">
                     <span class="layui-badge layui-bg-blue" >{{ .Title }}</span>
-                </a>
+                </a>   
+                {{end}}
             {{end}}
         </div>
     </div>
