@@ -5,19 +5,14 @@
 {{partial "nav" .}}
 
 <div class="layui-container">
-
-    <blockquote class="layui-elem-quote markdown-body single-title" >
-        <h1>{{ .Title }}</h1>
-        <h3> {{ .Date.Format "2006-01-02" }}. {{ .Description }} {{ .WordCount }} Words.</h3>
-        {{ range .Params.tags }}
-            <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">
-                <span class="layui-badge" >{{ . }}</span>
-            </a>
-        {{ end }}
-    </blockquote>
     
     <div class="layui-row">
-        <div class="layui-card">
+        <div class="layui-card single-card">
+            <br />
+            <blockquote class="layui-elem-quote markdown-body single-title" >
+                <h1>{{ .Title }}</h1>
+                {{partial "info" .}}
+            </blockquote>
             <div class="layui-card-body markdown-body single-content">
             
                 {{ .Content }}

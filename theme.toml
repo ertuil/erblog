@@ -6,19 +6,13 @@ license = "MIT"
 licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE"
 description = "A Simple Theme for Ertuil's Blog"
 homepage = "https://github.com/ertuil/erblog"
-tags = []
-features = []
+tags = ["blog"]
+features = ["tags]
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Ertuil"
+  homepage = "https://blog.ertuil.top/"
 
 [taxonomies]
   tag = "tags"

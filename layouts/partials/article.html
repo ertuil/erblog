@@ -2,22 +2,12 @@
         <a href="{{.Permalink}}">
             <h2 class="">{{.Title}}</h2>
         </a>
-        <h3> 
-            <i class="layui-icon layui-icon-date" style="font-size: 20px; vertical-align: -2px;"></i>
-            <span>{{.Date.Format "2006-01-02"}}</span>
-
-            <i class="layui-icon layui-icon-tabs" style="font-size: 18px; vertical-align: 0px;"></i>
-            {{ range .Params.tags }}
-                <a href="{{ "tags/" | relLangURL }}{{ . | urlize | lower }}">
-                    <span class="layui-badge layui-bg-blue" >{{ . | title | humanize }}</span>
-                </a>
-            {{ end }}
-        </h3>
+        {{partial "info" .}}
         <h3>
         	{{ if isset .Params "description" }}
 				{{ .Description }}
-			{{ else if gt (len .Summary) 120 }}
-				{{ slicestr .Summary 0 120 }}
+			{{ else if gt (len .Summary) 150 }}
+				{{ slicestr .Summary 0 150 }}
             {{else if .Summary}}
                 {{.Summary}}
             {{end}} ... <a href="{{.Permalink}}"><span style="color:#01AAED">Read More</span></a>

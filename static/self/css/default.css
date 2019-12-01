@@ -94,6 +94,10 @@ body {
 
 /* Single */
 
+.single-card {
+    margin: 20px;
+}
+
 .single-content {
     margin-top: 20px;
     padding-top: 20px;
@@ -105,6 +109,9 @@ body {
 .single-title {
     background-color: #FFFFFF;
     margin-top: 20px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     line-height: 1.125;
 }
 
@@ -121,6 +128,22 @@ body {
     line-height: 1.25;
     color: #697A89;
     vertical-align: middle;
+}
+
+.list-show {
+    background-color: #ffffff;
+}
+
+.list-show-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-show-title {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 .tags-card {
