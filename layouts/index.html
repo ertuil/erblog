@@ -36,7 +36,7 @@
         <div class="layui-row recent-inner" >
             <div class="layui-col-md8 layui-col-sm8 layui-col-xs12">
                 <h1> Recent Posts </h1>
-                {{ with (.Site.GetPage "section" "posts")  }}
+                {{ with (.Site.GetPage "section" "post")  }}
                     {{range last 5 .Pages.ByDate}}
                         {{ partial "article" .}}
                     {{end}}
