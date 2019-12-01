@@ -1,0 +1,14 @@
+.markdown-gallery img {
+    /* min-block-size: 300px; */
+    max-height: 250px;
+    max-width: 100%;
+    margin: 8px;
+    border-style: dotted;
+    border-color:#DFDFDF;
+    border-width:2px;
+}
+
+.markdown-gallery  {
+    display: inline-block;
+}
+
