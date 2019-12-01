@@ -1,10 +1,24 @@
 
-<ul class="layui-nav layui-bg-cyan" lay-filter="">
+<ul class="layui-nav layui-bg-cyan nav_container" lay-filter="">
+    <!-- For Desktop -->
     {{ if .Site.Menus.main }}
         {{ range sort .Site.Menus.main }}
-            <li class="layui-nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li class="layui-nav-item" id="nav_big"><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
     {{ end }}
+
+    <!-- For Mobile -->
+    <li class="layui-nav-item" id="nav_small">
+        <a href="javascript:;">
+            <i class="layui-icon layui-icon-app" style="font-size: 24px;"></i>
+        </a>
+
+        <dl class="layui-nav-child">
+            {{ range sort .Site.Menus.main }}
+                <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
+            {{ end }}
+        </dl>
+    </li>
 </ul>
  
 <script>
