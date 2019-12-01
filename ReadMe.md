@@ -28,8 +28,8 @@ There are some basic configuration options you may want to use:
 | title | Name of your website | None |
 | googleAnalytics | Google Analytics ID| None |
 | Params.portrait | The protrait file | erblog/static/self/img/avater.jpg |
-| Params.author | Your Name | None |
-| Params.description | A simple description | None |
+| Params.author | Your Name | 'Authors' |
+| Params.description | A simple description | 'Intro' |
 | Params.bio | Your biological description | None |
 | Params.favicon | The favicon file | "/favicon.ico" |
 

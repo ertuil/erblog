@@ -1,0 +1,48 @@
+baseURL = "https://gohugo.io/"
+title = "Hugo Themes"
+theme = "erblog"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+[params]
+    author = "Steve Francia"
+    bio = """
+    This is BIO. You can write something here.
+    """
+    copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[menu.icon]]
+    url = "mailto:username@mail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://twitter.com/username"
+    name = "twitter"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://www.instagram.com/username/"
+    name = "instagram"
+    weight = 1
