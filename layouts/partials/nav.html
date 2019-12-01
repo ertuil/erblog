@@ -1,6 +1,9 @@
 
 <ul class="layui-nav layui-bg-cyan nav_container" lay-filter="">
     <!-- For Desktop -->
+    <li class="layui-nav-item" id="nav_big"><a href="/">Home</a></li>
+    <li class="layui-nav-item" id="nav_big"><a href="/posts/">Posts</a></li>
+    <!-- <li class="layui-nav-item" id="nav_big"><a href="/tags/">Tags</a></li> -->
     {{ if .Site.Menus.main }}
         {{ range sort .Site.Menus.main }}
             <li class="layui-nav-item" id="nav_big"><a href="{{ .URL }}">{{ .Name }}</a></li>
@@ -14,6 +17,9 @@
         </a>
 
         <dl class="layui-nav-child">
+            <dd><a href="/">Home</a></dd>
+            <dd><a href="/posts/">Posts</a></dd>
+            <!--<dd><a href="/tags">Tags</a></dd>-->
             {{ range sort .Site.Menus.main }}
                 <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
             {{ end }}
