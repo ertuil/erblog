@@ -1,7 +1,7 @@
 # Erblog
 
 A personal blog theme powered by [Hugo](https://gohugo.io).
-Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com) and [undraw](https://undraw.co).
+Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com),github markdown css  and [undraw](https://undraw.co).
 
 ## Installation
 
