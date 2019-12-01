@@ -8,7 +8,7 @@
 
     <blockquote class="layui-elem-quote markdown-body single-title" >
         <h1>{{ .Title }}</h1>
-        <h3> {{ .Date.Format "2006 Jan 2, Mon." }} {{ .WordCount }} Words. {{ .Description }}</h3>
+        <h3> {{ .Date.Format "2006-01-02" }}. {{ .Description }} {{ .WordCount }} Words.</h3>
         {{ range .Params.tags }}
             <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">
                 <span class="layui-badge" >{{ . }}</span>

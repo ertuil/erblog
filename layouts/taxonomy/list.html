@@ -20,21 +20,15 @@
         </div>
     </div>
 
-    {{ range .Pages }}
-    {{ if .Summary }}
-    <div class="layui-card list-card">
-        <div class="layui-card-header">
-            <a href="{{.Permalink}}">
-                <h2 class="">{{.Title}} - {{.Date.Format "2006-01-02"}}</h2>
-            </a>
-        </div>
-        <div class="layui-card-body">
-            {{ .Summary }} <a href="{{.Permalink}}"><span style="color:#01AAED">More</span></a>
-        </div>
-    </div>
-    {{ end }}
-    {{ end }}
+    {{ range (.Paginator 10).Pages }}
+        {{ if .Summary }}
+            {{ partial "article" .}}
+        {{else if .Description}}
+            {{ partial "article" .}}
+        {{end}}
+    {{end}}
 
+    {{partial "pager" .}}
 </div>
 
 </main>

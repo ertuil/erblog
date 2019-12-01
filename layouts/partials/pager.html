@@ -1,0 +1,29 @@
+
+<div class="pager">
+    <div class="layui-btn-group">
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="{{ .Paginator.First.URL }}"><i class="layui-icon">&#xe65a;</i></a>
+        </button>
+        {{ if .Paginator.HasPrev }}
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="{{ .Paginator.Prev.URL }}"><i class="layui-icon">&#xe603;</i></a>
+        </button>
+        {{else}}
+        <button type="button" class="layui-btn layui-btn-disabled layui-btn-sm">
+            <i class="layui-icon">&#xe603;</i>
+        </button>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="{{ .Paginator.Next.URL }}"><i class="layui-icon">&#xe602;</i></a>
+        </button>
+        {{else}}
+        <button type="button" class="layui-btn layui-btn-disabled layui-btn-sm">
+            <i class="layui-icon">&#xe602;</i>
+        </button>
+        {{ end }}
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="{{ .Paginator.Last.URL }}"><i class="layui-icon">&#xe65b;</i></a>
+        </button>
+    </div>
+</div>

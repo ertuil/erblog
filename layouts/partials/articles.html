@@ -1,0 +1,5 @@
+    {{ range (.Paginator 10).Pages }}
+        {{ partial "article" .}}
+    {{ end }}
+
+    {{partial "pager" .}}
