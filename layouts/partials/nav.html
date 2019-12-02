@@ -3,7 +3,7 @@
     <!-- For Desktop -->
     <li class="layui-nav-item" id="nav_big"><a href="/">Home</a></li>
     <li class="layui-nav-item" id="nav_big"><a href="/post/">Posts</a></li>
-    <li class="layui-nav-item" id="nav_big"><a href="/gallery/">Gallery</a></li>
+    <!-- <li class="layui-nav-item" id="nav_big"><a href="/gallery/">Gallery</a></li> -->
 
     {{ if .Site.Menus.main }}
         {{ range sort .Site.Menus.main }}
@@ -20,7 +20,7 @@
         <dl class="layui-nav-child">
             <dd><a href="/">Home</a></dd>
             <dd><a href="/post/">Posts</a></dd>
-            <dd><a href="/gallery/">Gallery</a></dd>
+            <!--<dd><a href="/gallery/">Gallery</a></dd>-->
 
             {{ range sort .Site.Menus.main }}
                 <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
