@@ -1,7 +1,15 @@
 
 +++
 title = "A small gallery from unslash"
-date = "2019-12-01"
+date = "2019-11-31"
+draft = false
+tags = [
+    "gallery",
+]
+categories = [
+    "themes",
+    "gallery",
+]
 +++
 
 ![Photo by Egor Vikhrev on Unsplash](/img/egor-vikhrev-g5W0y1s6Sr8-unsplash.jpg)
