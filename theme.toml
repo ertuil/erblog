@@ -3,7 +3,7 @@
 
 name = "Erblog"
 license = "MIT"
-licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE"
+licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE.md"
 description = "A Simple Theme for blog and gallery"
 homepage = "https://github.com/ertuil/erblog"
 tags = ["blog","gallery","fun"]
