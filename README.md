@@ -3,7 +3,13 @@
 A personal blog theme powered by [Hugo](https://gohugo.io).
 Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com),github markdown css  and [undraw](https://undraw.co).
 
-## Installation
+![/images/tn.png](/images/tn.png)
+
+![/images/list.png](/images/list.png)
+
+![/images/single.png](/images/single.png)
+
+## 1. Installation
 
 You can install the theme by git clone.
 
@@ -19,7 +25,7 @@ Now you can get updates to Erblog in the future by updating the submodule:
 $ git submodule update --remote themes/minimal
 ```
 
-## Configuration
+## 2. Configuration
 
 There are some basic configuration options you may want to use:
 
@@ -77,15 +83,31 @@ None you add add your contacts like this:
 
 For more details, see exampleSite.
 
-## Content Management
+## 3. Content Management
 
-There are two basic sections, 'post' and 'gallery'. You may create a new post using the following command:
+### 3.1 Posts
+
+There are three basic sections, 'post', 'zone' and 'gallery'. You may create a new post using the following command:
 
 ```
 hugo new post/post_name.md
 ```
 
+### 3.2 Zone
+
+A section like facebook
+
+![/images/zone.png](/images/zone.png)
+
+```
+hugo new zone/example.md
+```
+
+### 3.3 Gallery
+
 Gallery is a simple collection for your photos.
+
+![/images/gallery.png](/images/gallery.png)
 
 ```
 hugo new gallery/gallery_name.md
@@ -104,4 +126,20 @@ draft: false
 ![1](/people/1.png)
 ![2](/people/2.png)
 ![3](/people/3.png)
+```
+
+### 3.4 Add zone and gallery to menu
+
+Add the following content to your `config.toml`
+
+```toml
+[[menu.main]]
+    url = "/zone/"
+    name = "Zone"
+    weight = 1
+
+[[menu.main]]
+    url = "/gallery/"
+    name = "Gallery"
+    weight = 2
 ```
