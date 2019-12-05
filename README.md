@@ -3,11 +3,11 @@
 A personal blog theme powered by [Hugo](https://gohugo.io).
 Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com),github markdown css  and [undraw](https://undraw.co).
 
-![/images/tn.png](/images/tn.png)
+![images/tn.png](images/tn.png)
 
-![/images/list.png](/images/list.png)
+![images/list.png](images/list.png)
 
-![/images/single.png](/images/single.png)
+![images/single.png](images/single.png)
 
 ## 1. Installation
 
@@ -97,7 +97,7 @@ hugo new post/post_name.md
 
 A section like facebook
 
-![/images/zone.png](/images/zone.png)
+![images/zone.png](/images/zone.png)
 
 ```
 hugo new zone/example.md
@@ -107,7 +107,7 @@ hugo new zone/example.md
 
 Gallery is a simple collection for your photos.
 
-![/images/gallery.png](/images/gallery.png)
+![images/gallery.png](/images/gallery.png)
 
 ```
 hugo new gallery/gallery_name.md
