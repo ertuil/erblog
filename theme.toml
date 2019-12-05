@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/ertuil/erblog/blob/master/LICENSE.md"
 description = "A Simple Theme for blog and gallery"
 homepage = "https://github.com/ertuil/erblog"
-tags = ["blog","gallery","fun"]
+tags = ["blog","personal","responsive","mobile","fast","gallery"]
 features = ["tags","simple","personality"]
 min_version = "0.41"
 
