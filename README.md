@@ -3,6 +3,8 @@
 A personal blog theme powered by [Hugo](https://gohugo.io).
 Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com),github markdown css  and [undraw](https://undraw.co).
 
+Erblog is also a responsive theme which means it is customed for your mobile platforms.
+
 ![images/tn.png](images/tn.png)
 
 ![images/list.png](images/list.png)
