@@ -36,7 +36,7 @@
                 </li>
             {{end}}
 
-            {{ range (.Paginator 10).Pages.ByDate.Reverse }}
+            {{ range (.Paginator 1).Pages.ByDate.Reverse }}
             <li class="layui-timeline-item">
               <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
               <div class="layui-timeline-content layui-text">
@@ -63,7 +63,7 @@
         <ul>
     </div>
 
-    {{partial "pager" .}}
+    <!--{{partial "pager" .}}-->
 </div>
 
 
