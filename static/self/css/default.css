@@ -184,6 +184,23 @@ body {
     height: 64px;
 }
 
+.nav-self-logo {
+    margin-left: 40px;
+    width: 200px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.nav-self-logo > a {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
 @media only screen and (max-width: 768px) {
     #nav_big {
         display: none;
@@ -192,6 +209,7 @@ body {
     #nav_small {
         display: inline-block;
     }
+    
 }
 
 @media only screen and (min-width: 768px) {

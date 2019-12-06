@@ -7,14 +7,14 @@
 <main>
 <div class="layui-container">
     <div class="layui-row about">
-        <div class="layui-col-xs12 layui-col-sm12 layui-col-md4 about_left">
+        <div class="layui-col-xs12 layui-col-sm4 layui-col-md4 about_left">
             <img class="about_portrait" src="{{ .Site.Params.portrait | default "self/img/avater.jpg" }}"/>
             <h1> {{ .Site.Params.author | default "Authors"}} </h1>
             <h2> {{ .Site.Params.description | default "Intro"}} </h2>
             
             <!-- Icons -->
             {{ if .Site.Menus.icon }}
-            <div class="layui-row about_left_icon">
+            <div class="layui-row layui-col-space10 about_left_icon">
                 {{ range sort .Site.Menus.icon }}
                 <div class="layui-col-md3 layui-col-sm3 layui-col-xs3">
                 <a href="{{ .URL }}"><i class="fa fa-{{ .Name }}" style="font-size:32px;"></i></a>
@@ -24,7 +24,7 @@
             {{ end }}
 
         </div>
-        <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 about_right">
+        <div class="layui-col-xs12 layui-col-sm8 layui-col-md8 about_right">
             <h1>Biography</h1>
             <h2>{{ safeHTML .Site.Params.Bio }}</h2>
         </div>

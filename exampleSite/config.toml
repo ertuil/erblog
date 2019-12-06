@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-title = "Hugo Themes"
+title = "Example Site"
 theme = "erblog"
 paginate = 3
 languageCode = "en"
@@ -10,7 +10,9 @@ footnoteReturnLinkContents = "^"
 [params]
     author = "Steve Francia"
     bio = """
-    This is BIO. You can write something here.
+    <p> This is BIO. You can write something here. </p>
+    <br />
+    <p>Also all html tags such as <a href="https://github.com/ertuil/erblog">link</a> are a good here.</p>
     """
     copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 
