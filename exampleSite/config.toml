@@ -14,13 +14,24 @@ footnoteReturnLinkContents = "^"
     """
     copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 
-[menu]
 
-  [[menu.main]]
+[[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 10
+
+[[menu.footer]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 1
+
+[[menu.footer]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
 
 [taxonomies]
 category = "categories"

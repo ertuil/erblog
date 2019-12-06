@@ -2,6 +2,7 @@ body {
     background-color: #f6f8fa!important;
     font-family: monospace, Helvetica, Tahoma, Arial;;
 }
+
 /* index */
 .about {
     margin-top: 40px;
@@ -205,10 +206,31 @@ body {
 
 /* Footer */
 footer {
+    /* background-color: #393D49; */
+    background-color: #2F4056;
+    padding: 20px 0 20px;
+
     text-align: center;
-    margin-top: 20px;
     border-bottom: var(--border-width) solid var(--accent);
     font-family: 'TT Commons',Arial,Helvetica,sans-serif;
     font-size: 1.0625rem;
-    color: #697A89;
+    color: #ffffff;
+}
+
+.copyright {
+    border-bottom: var(--border-width) solid var(--accent);
+    font-family: 'TT Commons',Arial,Helvetica,sans-serif;
+    font-size: 1.0625rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.footer-url {
+    color: #c2c2c2;
+}
+
+
+.footer-url:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
 }

@@ -55,7 +55,23 @@ Alse you can add your own custom menus in `config.toml` like this:
     weight = 7
 ```
 
-None you add add your contacts like this:
+A Menu in the footer is also available:
+
+```
+[[menu.footer]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 1
+
+[[menu.footer]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+```
+
+Now you can add your contacts like this:
 
 ```
 # Social icons to be shown on the right-hand side of the navigation bar

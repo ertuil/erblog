@@ -1,5 +1,21 @@
-<div class="layui-container ">
-    <footer>
-        <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | markdownify }}</p>
-    </footer>
-</div>
+<footer>
+    {{ if .Site.Menus.footer }}
+
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-col-md4 layui-col-sm6 layui-col-xs6">
+                <h3> Related Sites </h3>
+            </div>
+        </div>
+        <div class="layui-row">
+            {{ range sort .Site.Menus.footer }}
+            <div class="layui-col-md4 layui-col-sm6 layui-col-xs12">
+                <a href="{{ .URL }}"><p class="footer-url">{{ .Name }}</p></a>
+            </div>
+            {{end}}
+        </div>
+    </div>
+    {{end}}
+    
+    <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | markdownify }}</p>
+</footer>
