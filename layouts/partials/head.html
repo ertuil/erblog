@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ .Site.Title }}</title>
+    <title>{{ .Site.Title }}{{if.Title}} - {{.Title}} {{end}}</title>
 
     {{if .Params.tags}}
     <meta content="{{ delimit (union .Params.tags .Params.categories) ", " }}" name="keywords">
