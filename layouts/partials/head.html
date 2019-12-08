@@ -2,7 +2,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ .Title }}</title>
+    <title>{{ .Site.Title }}</title>
+
+    {{if .Params.tags}}
+    <meta content="{{ delimit (union .Params.tags .Params.categories) ", " }}" name="keywords">
+    {{else}}
+    <meta content="{{.Site.Title}}" name="keywords">
+    {{end}}
+    <meta content="{{ .Site.Params.description | default (printf "A website called %s" .Site.Title) }} - {{ or .Description .Summary}}" name="description">
+
     {{ if .Site.Params.favicon }}
         <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
     {{ end }}
