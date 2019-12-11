@@ -5,11 +5,11 @@ Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssom
 
 Erblog is also a responsive theme which means it is customed for your mobile platforms.
 
-![images/tn.png](images/tn.png)
+![images/tn.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/tn.png)
 
-![images/list.png](images/list.png)
+![images/list.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/list.png)
 
-![images/single.png](images/single.png)
+![images/single.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/single.png)
 
 ## 1. Installation
 
@@ -115,7 +115,7 @@ hugo new post/post_name.md
 
 A section like facebook
 
-![images/zone.png](/images/zone.png)
+![images/zone.png](https://raw.githubusercontent.com/ertuil/erblog/master//images/zone.png)
 
 ```
 hugo new zone/example.md
@@ -125,7 +125,7 @@ hugo new zone/example.md
 
 Gallery is a simple collection for your photos.
 
-![images/gallery.png](/images/gallery.png)
+![images/gallery.png](https://raw.githubusercontent.com/ertuil/erblog/master//images/gallery.png)
 
 ```
 hugo new gallery/gallery_name.md
