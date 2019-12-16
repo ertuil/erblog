@@ -6,8 +6,8 @@
 
 <div class="layui-container" style="margin-bottom: 10px">
     
-    <div class="layui-row">
-        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md8 layui-col-sm8 layui-col-xs12">
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="layui-elem-quote markdown-body single-title" >
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+        <div class="layui-col-md4 layui-col-sm4 layui-col-xs12">
             <div class="layui-card single-card">
                 <h1 class="single-title">Related Topics</h1>
                 {{ $related := .Site.RegularPages.Related . | first 5 }}

@@ -106,9 +106,16 @@ body {
 
 /* Single */
 
-.single-card {
-    margin: 20px;
+ .single-card {
+    margin-top: 10px;
 }
+/*
+@media only screen and (max-width: 768px){
+    .single-card {
+        margin: 0;
+        margin-top: 20px;
+    }
+} */
 
 .single-content {
     margin-top: 20px;
