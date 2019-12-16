@@ -22,7 +22,7 @@
 
         <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
             <div class="layui-card single-card">
-                <h1 class="single-title">Related Topics</h1>
+                <h1 class="single-title">Relevant Topics</h1>
                 {{ $related := .Site.RegularPages.Related . | first 5 }}
                 {{ with $related }}
                 	{{ range . }}
