@@ -1,9 +1,4 @@
-<html>
-    {{partial "head" .}}
-<body>
-{{partial "header" .}}
-{{partial "nav" .}}
-
+{{ define "main" }}
 <main id="main">
 
 <div class="layui-fluid list-show" >
@@ -31,6 +26,4 @@
 
 </main>
 
-{{ partial "footer" . }}
-</body>
-</html>
+{{end}}

@@ -1,8 +1,4 @@
-<html>
-    {{partial "head" .}}
-<body>
-{{partial "header" .}}
-{{partial "nav" .}}
+{{ define "main" }}
 
 <main>
     <div class="intro">
@@ -11,7 +7,4 @@
     </div>
 </main>
 
-{{ partial "footer" . }}
-
-</body>
-</html>
+{{end}}

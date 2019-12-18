@@ -1,9 +1,4 @@
-<html>
-    {{partial "head" .}}
-<body>
-{{partial "header" .}}
-{{partial "nav" .}}
-
+{{ define "main" }}
 <div class="layui-container" style="margin-bottom: 10px">
     
     <div class="layui-row layui-col-space10">
@@ -16,7 +11,7 @@
                 </blockquote>
                 <div class="layui-card-body markdown-body single-content">
                     {{ .Content }}
-                    {{- partial "self-define.html" . -}}
+                    {{- partial "self-define-single.html" . -}}
                 </div>
             </div>
         </div>
@@ -46,6 +41,4 @@
     </div>
 </div>
 
-{{ partial "footer" . }}
-</body>
-</html>
+{{end}}

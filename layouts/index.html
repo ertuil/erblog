@@ -1,8 +1,4 @@
-<html>
-    {{partial "head" .}}
-<body>
-{{partial "header" .}}
-{{partial "nav" .}}
+{{ define "main" }}
 
 <main>
 <div class="layui-container">
@@ -59,7 +55,4 @@
 
 </main>
 
-
-{{ partial "footer" . }}
-</body>
-</html>
+{{end}}
