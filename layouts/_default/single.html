@@ -1,8 +1,9 @@
 {{ define "main" }}
 <div class="layui-container" style="margin-bottom: 10px">
-    
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+
     <div class="layui-row layui-col-space10">
-        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12">
+        <div class="{{ if not $related }}layui-col-md12{{else}}layui-col-md8{{end}} layui-col-sm12 layui-col-xs12">
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="layui-elem-quote markdown-body single-title" >
@@ -16,10 +17,10 @@
             </div>
         </div>
 
+        {{ if $related }}
         <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
             <div class="layui-card single-card">
                 <h1 class="single-title">Relevant Topics</h1>
-                {{ $related := .Site.RegularPages.Related . | first 5 }}
                 {{ with $related }}
                 	{{ range . }}
                     <div style="margin-left: 10px;">
@@ -33,11 +34,9 @@
                 	{{ end }}
                 {{ end }}
                 <br />
-                {{ if not $related }}
-                    <h2 style="margin-left: 10px;"> No related topics </h2>
-                {{end}}
             </div>
         </div>
+        {{ end }}
     </div>
 </div>
 

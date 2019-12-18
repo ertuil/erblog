@@ -23,6 +23,12 @@ footnoteReturnLinkContents = "^"
     url = "/about/"
     weight = 10
 
+[[menu.main]]
+    identifier = "zone"
+    name = "Zone"
+    url = "/zone/"
+    weight = 10
+
 [[menu.footer]]
     identifier = "home"
     name = "home"
