@@ -161,3 +161,10 @@ Add the following content to your `config.toml`
     name = "Gallery"
     weight = 2
 ```
+
+## 4. Self-Define HTTP hook
+There are tow hooks available for you to insert your http codes.
+
+The first is `layouts/partials/self-define.html` which is located above the footer in all pages.
+
+The first is `layouts/partials/self-define-single.html`. It is useful to define your `comment modules` such as gittalk. It is below the major section of your articles of each pages.
