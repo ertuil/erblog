@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main id="main">
 
+<!--
 <div class="layui-fluid list-show" >
     <div class="layui-row"> 
         <div class="layui-col-md7 layui-col-sm6 layui-col-xs12">
@@ -14,7 +15,7 @@
         </div>
     </div>
 </div>
-
+-->
 <div class="layui-container">
     {{ range (.Paginator 10).Pages }}
         {{ partial "article" .}}
