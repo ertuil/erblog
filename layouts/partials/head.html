@@ -11,8 +11,8 @@
     <meta content="{{.Site.Title}}" name="keywords">
     {{end}}
     <meta content="{{ .Site.Title }} - {{ or .Description .Summary (printf "A website called %s" .Site.Title)}}" name="description">
-    <meta name="viewport" content="width=width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     {{ if .Site.Params.favicon }}
         <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
     {{ end }}
