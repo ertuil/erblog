@@ -17,5 +17,7 @@
     </div>
     {{end}}
     
-    <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | safeHTML }}</p>
+    <div class="layui-container">
+        <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | safeHTML }}</p>
+    </div>
 </footer>

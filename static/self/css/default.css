@@ -109,13 +109,14 @@ body {
 .single-card {
     margin-top: 10px;
 }
-/*
+
 @media only screen and (max-width: 768px){
     .single-card {
-        margin: 0;
-        margin-top: 20px;
+        margin-left: -3%;
+        margin-right: -3%;
+        margin-top: 10px;
     }
-} */
+}
 
 .single-content {
     margin-top: 20px;
@@ -154,6 +155,11 @@ body {
     line-height: 1.25;
     color: #697A89;
     vertical-align: middle;
+}
+
+.list-title-pic {
+    max-height:300px;
+    max-width:100%;
 }
 
 .list-show {
