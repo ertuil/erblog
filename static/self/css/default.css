@@ -172,6 +172,11 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .list-show {
+        display: none;
+    }
+
     .list-show-title {
         text-align: center;
         margin-top: 20px;
