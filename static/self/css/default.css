@@ -203,11 +203,11 @@ body {
 }
 
 .nav-self-logo {
-    margin-left: 40px;
+    margin-left: 10px;
     width: 200px;
     height: 100%;
     line-height: 60px;
-    text-align: center;
+    /* text-align: center; */
     color: #FFFFFF;
     font-size: 24px;
 }

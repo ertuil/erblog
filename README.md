@@ -39,6 +39,7 @@ There are some basic configuration options you may want to use:
 | Params.author | Your Name | 'Authors' |
 | Params.description | A simple description | 'Intro' |
 | Params.bio | Your biological description | None |
+| Params.logo | The logo file | None |
 | Params.favicon | The favicon file | "/favicon.ico" |
 
 Alse you can add your own custom menus in `config.toml` like this:

@@ -1,6 +1,12 @@
 <header class="layui-header layui-bg-cyan">
 
-    <a class="nav-self-logo" href="/">{{.Site.Title}}</a>
+    {{if .Site.Params.logo}}
+        <a href=""><img src="{{.Site.Params.logo}}" class="layui-nav-img" style="margin-left:10px;margin-top:-10px"></a>
+    {{end}}
+    
+    <a class="nav-self-logo" href="/">
+        {{.Site.Title}}
+    </a>
 
     <ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter="">
         <!-- For Desktop -->

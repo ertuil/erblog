@@ -9,7 +9,7 @@
     <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 0px;"></i>
     {{ range .Params.tags }}
         <a href="{{ "tags/" | relLangURL }}{{ . | urlize | lower }}">
-            <span class="layui-badge" style="vertical-align: 2px;">{{ . | title | humanize }}</span>
+            <span class="layui-badge" style="vertical-align: 2px;">{{ . }}</span>
         </a>
     {{ end }}
 </h3>
