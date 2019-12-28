@@ -16,7 +16,7 @@
 
         {{ if .Site.Menus.main }}
             {{ range sort .Site.Menus.main }}
-                <li class="layui-nav-item" id="nav_big"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li class="layui-nav-item" id="nav_big"><a href="/{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
 
