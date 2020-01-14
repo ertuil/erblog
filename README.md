@@ -24,7 +24,7 @@ $ git submodule update
 Now you can get updates to Erblog in the future by updating the submodule:
 
 ```
-$ git submodule update --remote themes/minimal
+$ git submodule update --remote themes/erblog
 ```
 
 ## 2. Configuration
