@@ -27,6 +27,10 @@ Now you can get updates to Erblog in the future by updating the submodule:
 $ git submodule update --remote themes/erblog
 ```
 
+> [@progressify](https://github.com/progressify) contributed a new style for scrollbar. You can check out the branch called [https://github.com/ertuil/erblog/tree/styled-scrollbar](https://github.com/ertuil/erblog/tree/styled-scrollbar) to use. Here is an example:
+> [https://progressify.dev](https://progressify.dev)
+> Thanks to his contribution.
+
 ## 2. Configuration
 
 There are some basic configuration options you may want to use:
