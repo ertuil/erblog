@@ -116,7 +116,7 @@ hugo new post/post_name.md
 
 A section like facebook
 
-![images/zone.png](https://raw.githubusercontent.com/ertuil/erblog/master//images/zone.png)
+![images/zone.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/zone.png)
 
 ```
 hugo new zone/example.md
@@ -126,7 +126,7 @@ hugo new zone/example.md
 
 Gallery is a simple collection for your photos.
 
-![images/gallery.png](https://raw.githubusercontent.com/ertuil/erblog/master//images/gallery.png)
+![images/gallery.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/gallery.png)
 
 ```
 hugo new gallery/gallery_name.md
