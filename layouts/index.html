@@ -44,7 +44,7 @@
                     <h1><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a> </h1>
                     {{ range $key, $value := $taxonomy }}
                         <a href="{{ $taxonomyname | relLangURL }}/{{ $key | urlize | lower }}/">
-                            <span class="layui-badge" style="margin: 5px">{{ $key }}</span>
+                            <span class="layui-badge layui-bg-cyan" style="margin: 5px">{{ $key }}</span>
                         </a>
                     {{end}}
                 {{end}}

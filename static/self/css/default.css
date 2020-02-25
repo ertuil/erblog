@@ -1,6 +1,7 @@
 body {
     background-color: #f6f8fa!important;
-    font-family: monospace, Helvetica, Tahoma, Arial;;
+    font-family: monospace, Helvetica, Tahoma, Arial;
+    font: monospace,Helvetica,Tahoma,Arial, PingFang SC,;
 }
 
 /* index */
@@ -263,4 +264,13 @@ footer {
 .footer-url:hover {
     color: #f2f2f2;
     text-decoration: underline;
+}
+
+.self-elem-quote {
+    margin-bottom:10px;
+    padding:15px;
+    line-height:22px;
+    border-left:4px solid #2F4056;
+    border-radius:0 2px 2px 0;
+    /* background-color:#f2f2f2 */
 }
