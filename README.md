@@ -167,8 +167,8 @@ Add the following content to your `config.toml`
     weight = 2
 ```
 
-## 4. Self-Define HTTP hook
-There are tow hooks available for you to insert your http codes.
+## 4. Self-Define HTML hook
+There are tow hooks available for you to insert your HTML codes.
 
 The first is `layouts/partials/self-define.html` which is located above the footer in all pages.
 
