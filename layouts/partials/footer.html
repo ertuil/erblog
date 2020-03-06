@@ -18,6 +18,6 @@
     {{end}}
     
     <div class="layui-container">
-        <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | safeHTML }}</p>
+        <p class="copyright">{{ .Site.Params.copyright | default "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io) and [Erblog](https://github.com/ertuil/erblog)." | markdownify }}</p>
     </div>
 </footer>
