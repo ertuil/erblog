@@ -1,5 +1,5 @@
     <blockquote class="self-elem-quote" style="background-color:#FFFFFF;margin-top: 10px;">
-        <a href="{{.Permalink}}">
+        <a href="{{.RelPermalink}}">
             <h2 class="">{{.Title}}</h2>
         </a>
         {{partial "info" .}}
@@ -10,6 +10,6 @@
 				{{ slicestr .Summary 0 150 }}
             {{else if .Summary}}
                 {{.Summary}}
-            {{end}} ... <a href="{{.Permalink}}"><span style="color: #1E9FFF">More</span></a>
+            {{end}} ... <a href="{{.RelPermalink}}"><span style="color:#01AAED">Read More</span></a>
         </h3>
     </blockquote>
