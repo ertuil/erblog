@@ -7,9 +7,9 @@
         	{{ if isset .Params "description" }}
 				{{ .Description }}
 			{{ else if gt (len .Summary) 150 }}
-				{{ slicestr .Summary 0 150 }}
+				{{ .Summary | truncate 150 " ..." }}
             {{else if .Summary}}
                 {{.Summary}}
-            {{end}} ... <a href="{{.RelPermalink}}"><span style="color:#01AAED">Read More</span></a>
+            {{end}} <a href="{{.RelPermalink}}"><span style="color:#01AAED">Read More</span></a>
         </h3>
     </blockquote>
