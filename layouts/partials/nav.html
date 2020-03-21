@@ -31,8 +31,10 @@
                 <dd><a href="/post/">Posts</a></dd>
                 <!--<dd><a href="/gallery/">Gallery</a></dd>-->
 
-                {{ range sort .Site.Menus.main }}
-                    <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
+                {{ if .Site.Menus.main }}
+                    {{ range sort .Site.Menus.main }}
+                        <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
+                    {{ end }}
                 {{ end }}
             </dl>
         </li>
