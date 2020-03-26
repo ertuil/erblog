@@ -2,6 +2,7 @@ body {
     background-color: #f6f8fa!important;
     font-family: monospace, Helvetica, Tahoma, Arial;
     font: monospace,Helvetica,Tahoma,Arial, PingFang SC,;
+    font-display: swap;
 }
 
 /* index */
@@ -245,6 +246,7 @@ footer {
     border-bottom: var(--border-width) solid var(--accent);
     font-family: 'TT Commons',Arial,Helvetica,sans-serif;
     font-size: 1.0625rem;
+    font-display: swap;
     color: #ffffff;
 }
 
@@ -252,6 +254,7 @@ footer {
     border-bottom: var(--border-width) solid var(--accent);
     font-family: 'TT Commons',Arial,Helvetica,sans-serif;
     font-size: 1.0625rem;
+    font-display: swap;
     color: #ffffff;
     margin-top: 10px;
 }
