@@ -1,7 +1,7 @@
 # Erblog
 
 A personal blog theme powered by [Hugo](https://gohugo.io).
-Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com),github markdown css  and [undraw](https://undraw.co).
+Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com), github markdown css and [undraw](https://undraw.co).
 
 Erblog is also a responsive theme which means it is customed for your mobile platforms.
 
@@ -39,14 +39,14 @@ There are some basic configuration options you may want to use:
 | ---- | ---- | ---- |
 | title | Name of your website | None |
 | googleAnalytics | Google Analytics ID| None |
-| Params.portrait | The protrait file | erblog/static/self/img/avater.jpg |
-| Params.author | Your Name | 'Authors' |
-| Params.description | A simple description | 'Intro' |
-| Params.bio | Your biological description | None |
-| Params.logo | The logo file | None |
-| Params.favicon | The favicon file | "/favicon.ico" |
+| Params.portrait | Path to your portrait | erblog/static/self/img/avatar.jpg |
+| Params.author | Your Name | Authors |
+| Params.description | Description of your Blog | Intro |
+| Params.bio | A Biography for your Blog | None |
+| Params.logo | Your Blog's Logo | None |
+| Params.favicon | The favicon file | /favicon.ico |
 
-Alse you can add your own custom menus in `config.toml` like this:
+Add your own custom menus in the `config.toml` like this:
 
 ```
 [[menu.main]]
@@ -104,7 +104,7 @@ Now you can add your contacts like this:
     weight = 1
 ```
 
-For more details, see exampleSite.
+For more details, see the example site.
 
 ## 3. Content Management
 
@@ -136,7 +136,7 @@ Gallery is a simple collection for your photos.
 hugo new gallery/gallery_name.md
 ```
 
-You can upload your files to `/static` directory and write these contents in `gallery_name.md`:
+You can upload your files to the `/static` directory and write the contents in `gallery_name.md`:
 
 ```
 ---
@@ -151,9 +151,9 @@ draft: false
 ![3](/people/3.png)
 ```
 
-### 3.4 Add zone and gallery to menu
+### 3.4 Add a Zone and Gallery to the Menu
 
-Add the following content to your `config.toml`
+Add the following content to your `config.toml` file:
 
 ```toml
 [[menu.main]]
@@ -167,9 +167,23 @@ Add the following content to your `config.toml`
     weight = 2
 ```
 
-## 4. Self-Define HTML hook
-There are tow hooks available for you to insert your HTML codes.
+## 4. User-Defined HTML Hooks
 
-The first is `layouts/partials/self-define.html` which is located above the footer in all pages.
+There are two hooks available for you to insert your HTML code.
 
-The first is `layouts/partials/self-define-single.html`. It is useful to define your `comment modules` such as gittalk. It is below the major section of your articles of each pages.
+1. `layouts/partials/self-define.html` renders content **above the footer for every page**.
+2. `layouts/partials/self-define-single.html` renders content **above the footer for every blog post**. This hook is useful to define your *comment modules*, such as gittalk, and Disqus.
+
+### 4.1 Using Hooks to Add Discus Comments
+
+Add Discus comments to the bottom of each post by inserting the following in the `layouts/partials/self-define-single.html` hook.
+
+```toml
+{{ template "_internal/disqus.html" . }}
+```
+
+For this to work you will also need to define the `disqusShortName` in your `config.toml`:
+
+```toml
+disqusShortName = "your-disqus-shortname"
+```
