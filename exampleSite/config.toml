@@ -9,6 +9,8 @@ footnoteReturnLinkContents = "^"
 
 [params]
     author = "Steve Francia"
+    badge = "red"
+    quote = "green"
     # logo = "//blog.ertuil.top/avater.png"
     bio = """
     <p> This is BIO. You can write something here. </p>

@@ -6,7 +6,7 @@
         <div class="{{ if not $related }}layui-col-md12{{else}}layui-col-md8{{end}} layui-col-sm12 layui-col-xs12">
             <div class="layui-card single-card">
                 <br />
-                <blockquote class="self-elem-quote markdown-body single-title" >
+                <blockquote class="self-elem-quote {{if isset $.Site.Params "quote"}}self-elem-quote-bg-{{index $.Site.Params.quote}}{{end}} markdown-body single-title" >
                     <h1>{{ .Title }}</h1>
                     {{partial "info" .}}
                 </blockquote>
@@ -24,7 +24,7 @@
                 {{ with $related }}
                 	{{ range . }}
                     <div style="margin-left: 10px;">
-                        <blockquote class="self-elem-quote" style="background-color:#FFFFFF;margin-top: 10px;">
+                        <blockquote class="self-elem-quote {{if isset $.Site.Params "quote"}}self-elem-quote-bg-{{index $.Site.Params.quote}}{{end}}" style="background-color:#FFFFFF;margin-top: 10px;">
                             <a href="{{.RelPermalink}}">
                                 <h2 class="">{{.Title}}</h2>
                             </a>

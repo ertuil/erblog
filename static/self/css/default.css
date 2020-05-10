@@ -273,7 +273,15 @@ footer {
     margin-bottom:10px;
     padding:15px;
     line-height:22px;
-    border-left:4px solid #2F4056;
+    border-left:4px solid #009688;
     border-radius:0 2px 2px 0;
     /* background-color:#f2f2f2 */
 }
+
+.self-elem-quote-bg-red {border-left-color: #FF5722!important;}
+.self-elem-quote-bg-orange {border-left-color: #FFB800!important;}
+.self-elem-quote-bg-green {border-left-color: #009688!important;}
+.self-elem-quote-bg-cyan {border-left-color: #2F4056!important;}
+.self-elem-quote-bg-blue {border-left-color: #1E9FFF!important;}
+.self-elem-quote-bg-black {border-left-color: #393D49!important;}
+.self-elem-quote-bg-gray {border-left-color: #666!important;}
