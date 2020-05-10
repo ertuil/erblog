@@ -5,15 +5,11 @@ Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssom
 
 ![images/screenshot.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/screenshot.png)
 
-![images/list.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/list.png)
-
-![images/single.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/single.png)
-
 > Erblog is also a responsive theme which means it is customed for your mobile platforms. 
 
-![images/mobile1.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile1.png)
+<img src="https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile1.png" width="400px" alt="images/mobile1.png"/>
 
-![images/mobile2.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile2.png)
+<img src="https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile2.png" width="400px" alt="images/mobile2.png"/>
 
 > Now it is possible to change the color of your themes. Use `Params.badge` and `Params.quote` to select one of your favourite color.
 
@@ -22,6 +18,10 @@ Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssom
 ![images/color2.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/color2.png)
 
 ![images/color3.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/color3.png)
+
+![images/list.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/list.png)
+
+![images/single.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/single.png)
 
 ## 1. Installation
 
