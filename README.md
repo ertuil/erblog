@@ -11,9 +11,9 @@ Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssom
 
 > Erblog is also a responsive theme which means it is customed for your mobile platforms. 
 
-![images/mobile1.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile1.png)
+<img src="https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile1.png" width="400px" alt="images/mobile1.png"/>
 
-![images/mobile2.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile2.png)
+<img src="https://raw.githubusercontent.com/ertuil/erblog/master/images/mobile2.png" width="400px" alt="images/mobile2.png"/>
 
 > Now it is possible to change the color of your themes. Use `Params.badge` and `Params.quote` to select one of your favourite color.
 
