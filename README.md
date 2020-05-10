@@ -3,7 +3,9 @@
 A personal blog theme powered by [Hugo](https://gohugo.io).
 Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com), github markdown css and [undraw](https://undraw.co).
 
-Erblog is also a responsive theme which means it is customed for your mobile platforms.
+Erblog is also a responsive theme which means it is customed for your mobile platforms. 
+
+> Now it is possible to change the color of your themes. Use `Params.badge` and `Params.quote` to select one of your favourite color.
 
 ![images/tn.png](https://raw.githubusercontent.com/ertuil/erblog/master/images/tn.png)
 
@@ -45,6 +47,8 @@ There are some basic configuration options you may want to use:
 | Params.bio | A Biography for your Blog | None |
 | Params.logo | Your Blog's Logo | None |
 | Params.favicon | The favicon file | /favicon.ico |
+| Params.badge | The color for badge ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' is available) | 'red' |
+| Params.quote | The color for quota ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' is available) | 'green' |
 
 Add your own custom menus in the `config.toml` like this:
 
