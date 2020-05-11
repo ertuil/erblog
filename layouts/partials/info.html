@@ -1,12 +1,24 @@
 <h3 style="margin-top:10px; margin-bottom:10px"> 
-    <i class="layui-icon layui-icon-date" style="font-size: 24px; vertical-align: -2px;"></i>
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
     <span>{{.Date.Format "2006-01-02"}}</span>
 
     <!--
     <i class="layui-icon layui-icon-read" style="font-size: 24px; vertical-align: -2px;"></i>
     <span style="vertical-align: px;">{{ .WordCount }} Words</span>
     -->
-    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 0px;"></i>
+    {{if isset .Params "categories"}} 
+    <i class="layui-icon layui-icon-list" style="font-size: 32px; vertical-align: -3px;"></i>
+    {{end}}
+
+    {{ range $tag := .Params.categories }}
+        <a href="{{ "categories/" | relLangURL }}{{ $tag | urlize | lower }}/">
+            <span class="layui-badge {{with $.Site.Params.badge}}layui-bg-{{.}}{{end}}" style="vertical-align: 2px;">{{ $tag }}</span>
+        </a>
+    {{ end }}
+
+    {{ if isset .Params "tags" }}
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;"></i>
+    {{end}}
     {{ range $tag := .Params.tags }}
         <a href="{{ "tags/" | relLangURL }}{{ $tag | urlize | lower }}/">
             <span class="layui-badge {{with $.Site.Params.badge}}layui-bg-{{.}}{{end}}" style="vertical-align: 2px;">{{ $tag }}</span>
