@@ -11,6 +11,7 @@ footnoteReturnLinkContents = "^"
     author = "Steve Francia"
     badge = "orange"
     quote = "red"
+    index_posts_num = 5
     # logo = "//blog.ertuil.top/avater.png"
     bio = """
     <p> This is BIO. You can write something here. </p>

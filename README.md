@@ -53,6 +53,7 @@ There are some basic configuration options you may want to use:
 | Params.bio | A Biography for your Blog | None |
 | Params.logo | Your Blog's Logo | None |
 | Params.favicon | The favicon file | /favicon.ico |
+| Params.index_posts_num | The number of posts displayed in Index | 5 | 
 | Params.badge | The color for badge ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'red' |
 | Params.quote | The color for quota ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'green' |
 

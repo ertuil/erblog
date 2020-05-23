@@ -33,7 +33,8 @@
             <div class="layui-col-md8 layui-col-sm8 layui-col-xs12">
                 <h1> Recent Posts </h1>
                 {{ with (.Site.GetPage "section" "post")  }}
-                    {{range first 5 .Pages.ByDate.Reverse}}
+                    {{$index_posts_num := $.Site.Params.index_posts_num | default 8}}
+                    {{range first $index_posts_num .Pages.ByDate.Reverse}}
                         {{ partial "article" .}}
                     {{end}}
                 {{ end }}
