@@ -17,8 +17,9 @@
     {{ end }}
 
     {{ if isset .Params "tags" }}
-    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;"></i>
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
     {{end}}
+
     {{ range $tag := .Params.tags }}
         <a href="{{ "tags/" | relLangURL }}{{ $tag | urlize | lower }}/">
             <span class="layui-badge {{with $.Site.Params.badge}}layui-bg-{{.}}{{end}}" style="vertical-align: 2px;">{{ $tag }}</span>
