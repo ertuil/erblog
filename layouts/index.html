@@ -47,7 +47,7 @@
                 <script type="text/javascript">
                     $("#search").keyup(function(event){
                         if(event.keyCode ==13){
-                            document.location = "https://www.google.com/search?q=" + $("#search").val(); + "+site%3A{{$.Site.BaseURL | safeHTML}}"
+                            document.location = "https://www.google.com/search?q=" + $("#search").val() + "+site%3A{{ $.Site.BaseURL }}"
                         }
                     });
                 </script>
