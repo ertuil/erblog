@@ -1,5 +1,11 @@
 # Erblog
 
+> ⚠️⚠️⚠️ **Note:** Mathjax is not included directly due to the performance considerations new! 
+>
+> Use `math: true` in Front Matter of each post to enable Mathjax in each single page.
+>
+> Or set `Params.math: true` to enable it globally.
+
 A personal blog theme powered by [Hugo](https://gohugo.io).
 Erblog is written by Ertuil with [layui.js](https://www.layui.com), [font-awssome](https://fontawesome.com), github markdown css and [undraw](https://undraw.co).
 
@@ -53,6 +59,7 @@ There are some basic configuration options you may want to use:
 | Params.bio | A Biography for your Blog | None |
 | Params.logo | Your Blog's Logo | None |
 | Params.favicon | The favicon file | /favicon.ico |
+| Params.math | import mathjax globally | false |
 | Params.index_posts_num | The number of posts displayed in Index | 5 | 
 | Params.google_search | Enable Google Intra-Site Search Engine | false | 
 | Params.badge | The color for badge ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'red' |
