@@ -34,6 +34,9 @@
     {{ if .Site.Params.MathJax | default true }}
     <!-- adds MathJax support -->
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
     {{ end }}
 
     <link rel="stylesheet" href="/layui/css/layui.css">
