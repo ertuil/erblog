@@ -64,6 +64,8 @@ There are some basic configuration options you may want to use:
 | Params.google_search | Enable Google Intra-Site Search Engine | false | 
 | Params.badge | The color for badge ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'red' |
 | Params.quote | The color for quota ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'green' |
+| Params.notice | Contents of notification | none |
+| Params.notice_color | The color for notification background ('red', 'cyan', 'orange', 'green', 'blue', 'black' and 'gray' are available) | 'red' |
 
 Add your own custom menus in the `config.toml` like this:
 

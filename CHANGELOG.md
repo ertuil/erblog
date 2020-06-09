@@ -1,3 +1,8 @@
+# Under construction
+
+Features:
+1. Notification
+
 # May 28, 2020 v1.1.0
 
 New features are imported to erblog:

@@ -1,0 +1,21 @@
+{{if isset .Site.Params "notice"}}
+<div id="erblog-notice" onclick="notice_close();"
+    class="layui-container-fluid {{with $.Site.Params.notice_color}}layui-bg-{{.}}{{else}}layui-bg-red{{end}}">
+    <div class="layui-row self-notice">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 self-notice-text">
+            <span style="margin-left: 20px">
+                {{.Site.Params.notice | safeHTML}}
+                <i class="layui-icon layui-icon-close" style="vertical-align: -1px;margin-left: 20px"></i>   
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+function notice_close() {
+    document.getElementById('erblog-notice').classList.add("layui-anim");
+    document.getElementById('erblog-notice').classList.add("layui-anim-fadeout");
+    //document.getElementById('erblog-notice').style.display='none';
+}
+</script>
+{{end}}
