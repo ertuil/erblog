@@ -10,7 +10,7 @@
         <div class="layui-row">
             {{ range sort .Site.Menus.footer }}
             <div class="layui-col-md4 layui-col-sm6 layui-col-xs12">
-                <a href="{{ .URL | relURL }}"><p class="footer-url">{{ .Name }}</p></a>
+                <a href="{{ .URL }}"><p class="footer-url">{{ .Name }}</p></a>
             </div>
             {{end}}
         </div>
