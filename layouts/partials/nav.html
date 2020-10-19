@@ -1,7 +1,7 @@
 <header class="layui-header layui-bg-cyan">
 
     {{if .Site.Params.logo}}
-        <a href=""><img src="{{.Site.Params.logo}}" class="layui-nav-img" style="margin-left:10px;margin-top:-10px"></a>
+        <a href=""><img src="{{.Site.Params.logo | relURL }}" class="layui-nav-img" style="margin-left:10px;margin-top:-10px"></a>
     {{end}}
     
     <a class="nav-self-logo" href="/">
@@ -11,12 +11,12 @@
     <ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter="">
         <!-- For Desktop -->
         <!--<li class="layui-nav-item" id="nav_big"><a href="/">Home</a></li>-->
-        <li class="layui-nav-item" id="nav_big"><a href="/post/">Posts</a></li>
-        <!-- <li class="layui-nav-item" id="nav_big"><a href="/gallery/">Gallery</a></li> -->
+        <li class="layui-nav-item" id="nav_big"><a href="{{ "/post/" | relURL }}">Posts</a></li>
+        <!-- <li class="layui-nav-item" id="nav_big"><a href="{{ "/gallery/" | relURL }}">Gallery</a></li> -->
 
         {{ if .Site.Menus.main }}
             {{ range sort .Site.Menus.main }}
-                <li class="layui-nav-item" id="nav_big"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li class="layui-nav-item" id="nav_big"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
 
@@ -28,12 +28,12 @@
 
             <dl class="layui-nav-child">
                 <!--<dd><a href="/">Home</a></dd>-->
-                <dd><a href="/post/">Posts</a></dd>
-                <!--<dd><a href="/gallery/">Gallery</a></dd>-->
+                <dd><a href="{{ "/post/" | relURL }}">Posts</a></dd>
+                <!--<dd><a href="{{ "/gallery/" | relURL }}">Gallery</a></dd>-->
 
                 {{ if .Site.Menus.main }}
                     {{ range sort .Site.Menus.main }}
-                        <dd><a href="{{ .URL }}">{{ .Name }}</a></dd>
+                        <dd><a href="{{ .URL | relURL }}">{{ .Name }}</a></dd>
                     {{ end }}
                 {{ end }}
             </dl>
