@@ -7,7 +7,7 @@
 <div class="layui-container">
     <div class="layui-row about">
         <div class="layui-col-xs12 layui-col-sm4 layui-col-md4 about_left">
-            <img class="lazyload about_portrait" data-src="{{ .Site.Params.portrait | default "self/img/avater.jpg" }}" />
+            <img class="lazyload about_portrait" data-src="{{ .Site.Params.portrait | default "/self/img/avater.jpg" | relURL }}" />
             <h1> {{ .Site.Params.author | default "Authors"}} </h1>
             <h2> {{ .Site.Params.description | default "Intro"}} </h2>
             
