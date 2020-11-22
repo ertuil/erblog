@@ -1,6 +1,6 @@
 # Erblog
 
-> ⚠️⚠️⚠️ **Note:** Mathjax is not included directly due to the performance considerations new! 
+> ⚠️⚠️⚠️ **Note:** Mathjax is not included directly due to the performance considerations now! 
 >
 > Use `math: true` in Front Matter to enable Mathjax in each single page.
 >
