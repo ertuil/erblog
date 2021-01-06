@@ -7,14 +7,14 @@ body {
 
 /* index */
 .about {
-    margin-top: 40px;
+    margin-top: 10px;
     width: 100%;
     /* height: 500px; */
     margin-bottom: 20px;
 }
 
 .about_left {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     padding: 30px 10px;
     position: relative;
@@ -29,18 +29,17 @@ body {
 .about_portrait {
     width: 200px;
     height: 200px;
-    margin: 20px auto;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .about_left > h1 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: -0.25px;
     line-height: 1.125;
     color: #022144;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .about_left > h2 {
