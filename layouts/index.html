@@ -16,7 +16,7 @@
             <div class="layui-row layui-col-space10 about_left_icon">
                 {{ range sort .Site.Menus.icon }}
                 <div class="layui-col-md3 layui-col-sm3 layui-col-xs3">
-                <a href="{{ .URL }}"><i class="fa fa-{{ .Name }}" style="font-size:32px;"></i></a>
+                <a href="{{ .URL }}"><i class="{{ .Name }}" style="font-size:32px;"></i></a>
                 </div>
                 {{ end }}
             </div>
